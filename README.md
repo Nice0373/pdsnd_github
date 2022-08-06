@@ -4,7 +4,7 @@
 Include the date you created this project and README file.
 
 ### Project Title
-Replace the Project Title
+## Bike Share Project
 
 ### Description
 In bikeshare project, I have created python program that can show statistic information for 3 cities including chicago, new york and washington. To use this program, you have to input some datas. Begin with telling which city that you want to know about. Next, you have to tell the program which filters that you would use. The three filters are day, month and both.
