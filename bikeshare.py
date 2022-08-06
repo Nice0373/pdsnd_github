@@ -174,8 +174,8 @@ def user_stats(df,city):
         print('Earliest Year : ',earliest_year)
         most_recent = max(df['Birth Year'])
         print('Most Recent Year : ',most_recent)
-        most_comon = df['Birth Year'].mode()[0]
-        print('Most Common : ',most_comon)
+        most_common = df['Birth Year'].mode()[0]
+        print('Most Common : ',most_common)
     else :
         print('There is no gender information and birth year information')
 
