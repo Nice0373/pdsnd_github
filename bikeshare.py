@@ -29,11 +29,11 @@ def get_filters():
         day = 'all'
     # get user input for day of week (all, monday, tuesday, ... sunday)
     elif filter == 'day' :
-        day = input('Which day? Please type response as Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday')
+        day = input('Which day? Please type response as Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday').lower()
         month = 'all'
     elif filter == 'both' :
         month = input('Which month? January, February, March, April, May, or June? Please type out the full month name.')
-        day = input('Which day? Please type response as Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday')
+        day = input('Which day? Please type response as Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday').lower()
     else :
         day = 'all'
         month ='all'
@@ -77,7 +77,7 @@ def load_data(city, month, day):
     # filter by day of week if applicable
     if day != 'all':
         # use the index of the day of week to get the corresponding int
-        days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+        days = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
         day = days.index(day) 
         # filter by day of week to create the new dataframe
         df = df[df['day_of_week'] == str(day)]
